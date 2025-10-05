@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kheya Shilpokola Academy - Registration Form</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    body {
+      background: linear-gradient(to right, #e0f2fe, #fef9c3);
+    }
+  </style>
+</head>
+<body class="min-h-screen flex items-center justify-center p-4">
+
+  <div class="container">
+    <div class="bg-white p-5 rounded shadow-lg mx-auto" style="max-width: 720px;">
+      <h2 class="text-center mb-4 text-3xl font-bold text-primary">Kheya Shilpokola Academy</h2>
+      <p class="text-center text-muted mb-4">Registration Form for Cultural Classes</p>
+
+      <form class="bg-white p-4 rounded shadow-sm">
+
+        <!-- Full Name -->
+        <div class="mb-3">
+          <label for="name" class="form-label fw-semibold">Full Name:</label>
+          <input type="text" class="form-control" id="name" name="name" placeholder="Your full name" required />
+        </div>
+
+        <!-- Age -->
+        <div class="mb-3">
+          <label for="age" class="form-label fw-semibold">Age:</label>
+          <input type="number" class="form-control" id="age" name="age" placeholder="Your age" required />
+        </div>
+
+        <!-- Contact -->
+        <div class="mb-3">
+          <label for="phone" class="form-label fw-semibold">Phone Number:</label>
+          <input type="tel" class="form-control" id="phone" name="phone" placeholder="01XXXXXXXXX" required />
+        </div>
+
+        <!-- Email -->
+        <div class="mb-3">
+          <label for="email" class="form-label fw-semibold">Email (optional):</label>
+          <input type="email" class="form-control" id="email" name="email" placeholder="you@example.com" />
+        </div>
+
+        <!-- Class Selection -->
+        <div class="mb-3">
+          <label class="form-label fw-semibold">Select Class(es):</label>
+          <div class="row">
+            <div class="col-6 col-md-4">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="classes[]" value="Dance" id="dance">
+                <label class="form-check-label" for="dance">নাচ (Dance)</label>
+              </div>
+            </div>
+            <div class="col-6 col-md-4">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="classes[]" value="Music" id="music">
+                <label class="form-check-label" for="music">গান (Music)</label>
+              </div>
+            </div>
+            <div class="col-6 col-md-4">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="classes[]" value="Art" id="art">
+                <label class="form-check-label" for="art">চিত্রাঙ্কন (Art)</label>
+              </div>
+            </div>
+            <div class="col-6 col-md-4">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="classes[]" value="Recitation" id="recitation">
+                <label class="form-check-label" for="recitation">আবৃত্তি (Recitation)</label>
+              </div>
+            </div>
+            <div class="col-6 col-md-4">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="classes[]" value="Presentation" id="presentation">
+                <label class="form-check-label" for="presentation">উপস্থাপনা (Presentation)</label>
+              </div>
+            </div>
+            <div class="col-6 col-md-4">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="classes[]" value="Handwriting" id="handwriting">
+                <label class="form-check-label" for="handwriting">সুন্দর হস্তলিখন (Handwriting)</label>
+              </div>
+            </div>
+            <div class="col-6 col-md-6">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="classes[]" value="Kids English" id="kidsEnglish">
+                <label class="form-check-label" for="kidsEnglish">Kids English</label>
+              </div>
+            </div>
+            <div class="col-6 col-md-6">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="classes[]" value="Adult English" id="adultEnglish">
+                <label class="form-check-label" for="adultEnglish">Adult Spoken English</label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Preferred Time -->
+        <div class="mb-3">
+          <label for="time" class="form-label fw-semibold">Preferred Class Time:</label>
+          <select class="form-select" id="time" name="preferredTime">
+            <option selected disabled>Select a time slot</option>
+            <option>Morning (9am - 11am)</option>
+            <option>Afternoon (2pm - 4pm)</option>
+            <option>Evening (5pm - 7pm)</option>
+            <option>Weekend (Friday/Saturday)</option>
+          </select>
+        </div>
+
+        <!-- Additional Message -->
+        <div class="mb-3">
+          <label for="message" class="form-label fw-semibold">Additional Message (optional):</label>
+          <textarea class="form-control" id="message" name="message" rows="3" placeholder="Any comments or questions?"></textarea>
+        </div>
+
+        <!-- Submit -->
+        <button type="submit" class="btn btn-primary w-100">Submit Registration</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
